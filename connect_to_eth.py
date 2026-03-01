@@ -25,7 +25,7 @@ def connect_with_middleware(contract_json):
         abi = d["abi"]
 
     # Connect to BNB testnet (opBNB)
-    url = "https://opbnb-testnet.infura.io/v3/147858491d9b4b49828ae53fe87393fb"
+    url = "https://bsc-testnet.infura.io/v3/147858491d9b4b49828ae53fe87393fb"
     w3 = Web3(HTTPProvider(url))
     assert w3.is_connected(), f"Failed to connect to provider at {url}"
 
