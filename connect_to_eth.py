@@ -30,7 +30,6 @@ def connect_with_middleware(contract_json):
 	url = "https://opbnb-testnet.infura.io/v3/147858491d9b4b49828ae53fe87393fb"  # FILL THIS IN
 	w3 = Web3(HTTPProvider(url))
 	assert w3.is_connected(), f"Failed to connect to provider at {url}"
-	return w3
 	# The second section requires you to inject middleware into your w3 object and
 	# create a contract object. Read more on the docs pages at https://web3py.readthedocs.io/en/stable/middleware.html
 	# and https://web3py.readthedocs.io/en/stable/web3.contract.html
